@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt-get update
 
-for i in lua5.3 luajit python3-pip python3-setuptools npm node-legacy
+for i in lua5.3 luajit python3-pip python3-setuptools npm nodejs-legacy
 do if which $i
     then echo "# $i installed"
     else sudo apt-get install -y $i
@@ -16,7 +16,11 @@ if which pycco
         rm -rf /temp
 fi
 
-npm install -g typescript
+if which tsc
+	then echo "Typescript installed"
+	else
+	sudo npm install -g typescript
+fi
 
 echo "Transpiling Typescript code ..."
 cd src

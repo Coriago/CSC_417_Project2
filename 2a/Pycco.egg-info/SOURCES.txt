@@ -1,0 +1,6 @@
+Pycco.egg-info/PKG-INFO
+Pycco.egg-info/SOURCES.txt
+Pycco.egg-info/dependency_links.txt
+Pycco.egg-info/entry_points.txt
+Pycco.egg-info/requires.txt
+Pycco.egg-info/top_level.txt
