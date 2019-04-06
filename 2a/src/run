@@ -1,0 +1,6 @@
+make eg1 > /dev/null
+# Run this to take the "canned" input and compare it run.out.
+cat run.in | node sortlastcol.js | node argmin.js | node Pipe3.js 
+
+# Run this for a full run.
+#dsl/monte_carlo -n 1000 | dsl/brooks2 | dom | node sortlastcol.js | node argmin.js | node Pipe3.js 

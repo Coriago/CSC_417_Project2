@@ -7,7 +7,9 @@ This is the overview of the new pipeline:
 
 1.) To run first go into the 2a folder and run `chmod +x run`.
 
-2.) The directory should now be in the src folder and ide started.
+2.) Now enter `./run` which will install all dependancies. The directory should now be in the src folder and ide started.
+
+3.) From here you can use `./run` again to run the canned input into our pipeline or regenerate using `./run2`. 
 
 run.in - contains the input to the our bestrest pipeline from dom
 run.out - contains the output of the bestrest pipeline
