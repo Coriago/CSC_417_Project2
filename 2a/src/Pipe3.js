@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 "use strict";
 exports.__esModule = true;
 var fs = require("fs");
@@ -55,7 +56,7 @@ function cuts(input, low, high, pre) {
             return cuts(input, cut + 1, high, pre.concat("|.."));
         }
     }
-    mark(input, 0, low - 1);
+    mark(input, 1, low - 1);
     mark(input, low, high);
 }
 /*
