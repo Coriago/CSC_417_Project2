@@ -1,0 +1,22 @@
+1) Pipe and Filter (bestrest and rank)
+2) Recursion (bestrest)
+3) Adapter (montecarlo)
+-----------------------------------------
+4) Map/Reduce (montecarlo)
+5) Strategy Pattern (montecarlo)
+6) Aspects (all)
+7) Proxy (montecarlo) 
+8) Spreadsheet ()
+9) Compartmental Model (brooks)
+10) Lambda Calculus (montecarlo)
+
+
+Languages:
+) TypeScript
+) Haskell
+
+Filter:
+) bestrest
+) montecarlo
+) brooks
+

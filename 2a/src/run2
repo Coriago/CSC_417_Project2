@@ -1,0 +1,3 @@
+make eg1 > /dev/null
+dsl/monte_carlo -n 1000 | dsl/brooks2 | dom > run.in
+cat run.in | node sortlastcol.js | node argmin.js | node Pipe3.js &> run.out
