@@ -121,7 +121,7 @@ function merge(vals: number[][], left: number[][], right: number[][],
     var k: number = 0;
     while (i < leftn && j < rightn)
         //comparing last col of row *i* in left array to last col of row *j* in right array
-        if (left[i][left[i].length - 1] <= right[j][right[j].length - 1])
+        if (left[i][left[i].length - 1] < right[j][right[j].length - 1])
             vals[k++] = left[i++];
         else
             vals[k++] = right[j++];
@@ -161,7 +161,7 @@ function selectionSort(vals: number[][]): void {
         var min: number = i;
         for (var j: number = i + 1; j < n; j++)
             //compares last col of row *j* with last col of row *min*
-            if (vals[j][vals[j].length - 1] < vals[min][vals[min].length - 1])
+            if (vals[j][vals[j].length - 1] <= vals[min][vals[min].length - 1])
                 min = j;
 
         //swap rows

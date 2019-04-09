@@ -74,8 +74,8 @@ function cuts(input: table, low: number, high: number, pre: string) {
             return cuts(input, cut + 1, high, pre.concat("|.."));
         }
     }
-    mark(input, 1, low - 1);
-    mark(input, low, high);
+    mark(input, 0, low - 2);
+    mark(input, low - 1, high);
 }
 
 /*
@@ -97,8 +97,7 @@ function mark(input: table, low: number, high: number) {
  * number to cut at and the high number to cut at.
  */
 function band(input: table, low: number, high: number) {
-    process.stdout.write("band\n");
-    if(low == 1) {
+    if(low == 0) {
         return ("..").concat(String(input.data[high][input.c]));
     } else {
         return String(input.data[low][input.c]).concat("..", String(input.data[high][input.c]));
